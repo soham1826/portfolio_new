@@ -11,9 +11,12 @@
   }
 
   .nav_link{
-    @apply md:p-2 p-1 font-poppins uppercase rounded-lg border-2 border-Sorange  hover:bg-Sorange hover:border-Sblack
+    @apply md:p-2 p-1 font-poppins uppercase rounded-lg border border-Scream  hover:bg-Scream hover:border-orange-400 hover:text-Sblack text-white 
   }
 }
 
-
+.main{
+  background-image: url(/public/assets/grid.svg);
+  opacity:2;
+}
 
