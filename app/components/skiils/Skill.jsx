@@ -7,7 +7,7 @@ import { CircularProgress } from "@mui/material"
 import Image from "next/image"
 
 
-const Skill = ({imageSrc , bgColor,completed}) => {
+const Skill = ({imageSrc , bgColor,completed,techName}) => {
   const [percent, setPercent] = useState(0);
   return (
     <motion.div 
@@ -30,10 +30,13 @@ const Skill = ({imageSrc , bgColor,completed}) => {
 
       <div className="absolute opacity-0 group-hover:opacity-90 transition duration-100 ease-in-out group-hover:bg-Scream w-16 h-16 xl:h-32 xl:w-32 md:h-24 md:w-24 rounded-md " onMouseEnter={()=>{setTimeout(()=>{setPercent(completed)},500);}}
         onMouseLeave={()=>{setPercent(0)}}>
-        <div className="flex items-center justify-center h-full p-2 " 
+        <div className="flex items-center justify-center h-full xl:p-2  " 
         >
-          <p className="absolute xl:text-xl text-sm font-poppins">{completed}%</p>
-          <Circle percent={percent} strokeWidth={8} gapPosition="top" strokeColor="green" trailColor="gray" trailWidth={7}/>
+          <div className="absolute text-center text-Snavy">
+          <p className="xl:text-xl text-xs font-poppins">{techName}</p>
+          <p className=" xl:text-xl text-xs font-poppins">{completed}%</p>
+          </div>
+          <Circle percent={percent} strokeWidth={8} gapPosition="top" strokeColor="green"trailColor="gray" trailWidth={7}/>
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import Hero from "./components/Hero/Hero"
 import SocialNav from "./components/socialNav/SocialNav"
 import About from "./components/about/About"
 import Skills from "./components/skiils/Skills"
+import Experiance from "./components/experiance/Experiance"
 
 const page = () => {
   return (
@@ -15,6 +16,9 @@ const page = () => {
       </section>
       <section id="Skills" className=" snap-start overflow-y-auto">
         <Skills/>
+      </section>
+      <section id="Experiance" className=" snap-start overflow-y-auto">
+        <Experiance/>
       </section>
 
 
