@@ -37,7 +37,7 @@ const About = () => {
            
             👋 Hey there, I'm Soham Kulkarni, an enthusiastic third-year Computer Engineering student hailing from the vibrant city of Nashik, Maharashtra, India. 🌆<br/>
 
-            🌐 Embarking on an exhilarating journey into the world of web development two years ago, I've been on a relentless quest to blend creativity with code. 🚀 Through hands-on experiences and practical projects, I've refined my skills and unleashed innovative digital solutions.<br/>
+            🌐 Embarking on an exhilarating journey into the world of web development two years ago, I've been on a relentless quest to blend creativity with code.<br/> 🚀 Through hands-on experiences and practical projects, I've refined my skills and unleashed innovative digital solutions.<br/>
 
             🎙️ Beyond the screen, I wield the power of words as a skilled speaker, captivating audiences with compelling narratives and dynamic presentations.<br/>
 
