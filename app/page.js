@@ -13,7 +13,7 @@ const page = () => {
       <section id="About" className=" snap-center overflow-y-auto">
         <About/>
       </section>
-      <section id="Skiils" className=" snap-start overflow-y-auto">
+      <section id="Skills" className=" snap-start overflow-y-auto">
         <Skills/>
       </section>
 
