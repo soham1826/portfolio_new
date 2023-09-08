@@ -5,11 +5,13 @@ const About = () => {
   return (
       <div className="h-screen py-5 my-5">
 
+
         <div className="text-center">
           <h3 className="text-2xl tracking-[20px] uppercase text-Scream font-poppins">About</h3>
         </div>
 
-        <div className="flex flex-col xl:flex-row text-center xl:text-left mt-12 spacing-y-10 items-center gap-5 xl:px-[8rem] px-4">
+        <div className="flex flex-col xl:flex-row text-center xl:text-left mt-8 spacing-y-10 items-center gap-5 xl:px-[8rem] px-4 xl:justify-center h-full ">
+
 
           <motion.img 
           initial={{
@@ -27,13 +29,13 @@ const About = () => {
             once:true
           }}
           
-          src="/assets/about.jpg" className="flex-shrink-0 object-cover rounded-full w-56 h-56 md:w-[300px] md:h-[300px] md:rounded-lg xl:w-[500px] xl:h-[600px] xl:rounded-md"
+          src="/assets/about.jpg" className="flex-shrink-0 object-cover rounded-full w-56 h-56 md:w-[300px] md:h-[300px] md:rounded-lg xl:w-[500px] xl:h-[500px] xl:rounded-md"
           />
 
-          <div className="flex flex-col md:px-2">
+          <div className="flex flex-col md:px-2 h-56 md:h-[300px] xl:h-[500px]">
 
            <h4 className="font-poppins text-3xl text-Swhite mt-3">Some Info About me</h4>
-            <p className="mt-3 font-roboto text-base xl:text-xl font-light text-Scream">
+            <p className="mt-3 font-roboto text-2xl xl:text-xl font-light text-Scream spacing-y-10">
            
             👋 Hey there, I'm Soham Kulkarni, an enthusiastic third-year Computer Engineering student hailing from the vibrant city of Nashik, Maharashtra, India. 🌆<br/>
 

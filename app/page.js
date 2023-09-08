@@ -3,6 +3,7 @@ import SocialNav from "./components/socialNav/SocialNav"
 import About from "./components/about/About"
 import Skills from "./components/skiils/Skills"
 import Experiance from "./components/experiance/Experiance"
+import Projects from "./components/projects/Projects"
 
 const page = () => {
   return (
@@ -19,6 +20,9 @@ const page = () => {
       </section>
       <section id="Experiance" className=" snap-start overflow-y-auto">
         <Experiance/>
+      </section>
+      <section id="Projects" className=" snap-start overflow-y-auto">
+        <Projects/>
       </section>
 
 

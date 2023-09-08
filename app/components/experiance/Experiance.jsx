@@ -7,12 +7,10 @@ const Experiance = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
-    className="h-screen flex flex-col  items-center text-center mt-24 overflow-x-auto">
+    className="h-screen flex flex-col  items-center mt-20 overflow-x-auto">
         <h3 className="text-2xl text-Scream tracking-[20px] font-poppins uppercase">Experiance</h3>
 
-        <div className="flex flex-row snap-x snap-mandatory gap-5 overflow-x-scroll px-10 xl:w-[1200px] md:w-full w-[400px]  mt-12">
-            <ExperianceCard/>
-            <ExperianceCard/>
+        <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory ">
             <ExperianceCard/>
             <ExperianceCard/>
             <ExperianceCard/>
