@@ -7,8 +7,8 @@ const Skills = () => {
   return (
     <div className="h-screen">
       <div className="text-center m-4" >
-        <h3 className="uppercase tracking-[20px] text-Scream font-poppins mt-16 text-2xl">Skills</h3>
-        <p className="uppercase font-poppins text-lg text-gray-300 opacity-20 tracking-wider mb-12"> Hover/Click Over to see proficiancy</p>
+        <h3 className="uppercase tracking-[20px] text-Scream font-poppins mt-16 text-4xl">Skills</h3>
+        <p className="uppercase font-poppins text-xl text-gray-300 opacity-20 tracking-wider mb-12 mt-2"> Hover/Click Over to see proficiancy</p>
       </div>
       
       <motion.div

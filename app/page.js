@@ -12,13 +12,13 @@ const page = () => {
       <section id="Hero" className=" snap-center" >
           <Hero/>
       </section>
-      <section id="About" className=" snap-center overflow-y-auto">
+      <section id="About" className=" snap-start xl:overflow-y-hidden overflow-y-auto">
         <About/>
       </section>
       <section id="Skills" className=" snap-start overflow-y-auto">
         <Skills/>
       </section>
-      <section id="Experiance" className=" snap-start overflow-y-auto">
+      <section id="Experiance" className=" snap-center overflow-y-auto">
         <Experiance/>
       </section>
       <section id="Projects" className=" snap-start overflow-y-auto">

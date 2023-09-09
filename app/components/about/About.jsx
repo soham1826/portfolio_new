@@ -7,7 +7,7 @@ const About = () => {
 
 
         <div className="text-center">
-          <h3 className="text-2xl tracking-[20px] uppercase text-Scream font-poppins">About</h3>
+          <h3 className="text-4xl tracking-[20px] uppercase text-Scream font-poppins">About</h3>
         </div>
 
         <div className="flex flex-col xl:flex-row text-center xl:text-left mt-8 spacing-y-10 items-center gap-5 xl:px-[8rem] px-4 xl:justify-center h-full ">
