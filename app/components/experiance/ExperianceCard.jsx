@@ -32,11 +32,11 @@ const ExperianceCard = () => {
     }}
     
 
-    className=" w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center rounded-full"  src="/assets/hero.jpg"/>
+    className=" w-32 h-32 xl:w-[180px] xl:h-[180px] object-cover object-center rounded-full"  src="/assets/hero.jpg"/>
 
     <div className=" px-0 xl:px-10">
-      <h4 className="text-4xl font-poppin text-Swhite">Software Developer Intern</h4>
-      <p className="  text-Scream  font-bold text-2xl mt-1 font-roboto">MICROSOFT</p>
+      <h4 className="xl:text-4xl md:text-3xl text-2xl font-poppin text-Swhite">Software Developer Intern</h4>
+      <p className="  text-Scream  font-bold xl:text-2xl md:text-xl text-lg  mt-1 font-roboto">MICROSOFT</p>
       <div className="flex space-x-2  my-0 pt-2">
         <img className="h-10 w-10 rounded-full"alt="" src="/assets/react.svg"/>
         <img className="h-10 w-10 rounded-full"alt="" src="/assets/react.svg"/>
@@ -52,9 +52,7 @@ const ExperianceCard = () => {
         <li>Summary points</li>
         <li>Summary points</li>
         <li>Summary points</li>
-        <li>Summary points</li>
-        <li>Summary points</li>
-        <li>Summary points</li>
+      
       </ul>
     </div>
 

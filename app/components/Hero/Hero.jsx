@@ -13,7 +13,7 @@ const Hero = () => {
       xs:text-[10px] text-Swhite opacity-20 font-poppins mt-2">software Developer</p>
       <h1 className="md:text-[2.5rem] text-[1.5rem] font-poppins text-Scream mt-2">
         <Typewriter options={{
-          strings:["I'm Soham Kulkarni",'</DEVELOPER>','</COFFE-LOVER>'],
+          strings:["I'm Soham Kulkarni",'<% WEB-DEVELOPER %>','<% FRONT-END %>','<% BACK-END %>'],
           autoStart:true,
           loop:true,
           delay:50
