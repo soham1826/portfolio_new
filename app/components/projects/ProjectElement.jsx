@@ -10,10 +10,37 @@ import Image from 'next/image'
 
 const ProjectElement = () => {
   return (
-    <div className='h-[600px] xl:h-[40%] md:h-[40%] lg-h-[40%] max-w-7xl flex xl:flex-row lg:flex-row md:flex-row flex-col   justify-evenly mt-8 p-3 border-Sblack border rounded-lg items-center  bg-gray-400 bg-opacity-5 shadow-md'>
-      <motion.img src="/assets/idlidu.png" className="w-[350px] h-[180px] xl:w-[400px] xl:h-[300px] md:h-[250px] md:w-[350px]  rounded-lg flex-shrink-0 object-cover "/>
-      <div className='text-center flex-col'>
-        <h3 className='xl:text-4xl md:text-3xl text-2xl font-poppins text-Scream'>Idlidu - MarketPlace For Artists</h3>
+    <div
+    className='h-[600px] xl:h-[40%] md:h-[40%] lg-h-[40%] max-w-7xl flex xl:flex-row lg:flex-row md:flex-row flex-col   justify-evenly mt-8 p-3 border-Sblack border rounded-lg items-center  bg-gray-400 bg-opacity-5 shadow-md'>
+      <motion.img 
+      initial={{
+        opacity:0
+      }}
+      whileInView={{
+        opacity:1,
+      }}
+      viewport={{
+        once:true
+      }}
+      transition={{
+        duration:1.2
+      }}
+      src="/assets/idlidu.png" className="w-[350px] h-[180px] xl:w-[400px] xl:h-[300px] md:h-[250px] md:w-[350px]  rounded-lg flex-shrink-0 object-cover "/>
+      <motion.div 
+      initial={{
+        opacity:0
+      }}
+      whileInView={{
+        opacity:1,
+      }}
+      viewport={{
+        once:true
+      }}
+      transition={{
+        duration:1.2
+      }}
+      className='text-center flex-col'>
+        <h3 className='xl:text-4xl md:text-3xl sm:text-2xl text-2xl font-poppins text-Scream'>Idlidu - MarketPlace For Artists</h3>
         <p className='xl:text-2xl text-xl text-Swhite'>It it a wonderfull webapp where you can have your artist profile and get invited by various customers for performnaces and get paid</p>
 
         <div className='flex flex-row gap-5 items-center justify-center p-3'>
@@ -39,7 +66,7 @@ const ProjectElement = () => {
          <Image src="/assets/typescript.svg" width={30} height={30} alt='none' className='w-14 h-14'/>
         </div>
     
-      </div>
+      </motion.div>
 
 
     </div>

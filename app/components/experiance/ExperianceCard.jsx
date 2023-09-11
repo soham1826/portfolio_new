@@ -14,7 +14,7 @@ const ExperianceCard = () => {
   transition={{
     duration:1
   }}
-  className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[90vw] md:w-[600px] xl:w-[750px] snap-center p-10 bg-gray-400 bg-opacity-5   cursor-pointer transition-opacity duration-200 overflow-x-hidden xl:overflow-y-hidden  shadow-md">
+  className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[90vw] md:w-[600px] xl:w-[900px] snap-center p-10 bg-gray-400 bg-opacity-5   cursor-pointer transition-opacity duration-200 overflow-x-hidden xl:overflow-y-hidden  shadow-md">
     <motion.img
     initial={{
       opacity:0,
