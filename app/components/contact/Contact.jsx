@@ -24,7 +24,7 @@ const Contact = () => {
     className="h-screen flex flex-col items-center mt-20 overflow-x-auto ">
         <h3 className="xl:text-4xl text-3xl text-Scream tracking-[20px] font-poppins uppercase">CONTACT</h3>
 
-        <div className='h-full text-center items-center justify-center flex flex-col space-y-10'>
+        <div className='h-full text-center items-center justify-start flex flex-col space-y-10 mt-12'>
           <h4 className='xl:text-3xl md:text-2xl text-xl text-Swhite font-poppins items-center'>Wanna Talk ? Feel free to<span className='text-Scream'> Contact me</span></h4>
           <div className='flex flex-col space-y-5'>
             <div className='flex items-center space-x-5 justify-center text-Swhite font-poppins xl:text-xl text-lg gap-2'>
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 mx-auto w-fit font-poppins text-lg px-2 '>
+          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 mx-auto w-fit font-poppins text-lg px-2 ' autoComplete='off'>
             <div className='flex space-x-2 '>
               <input {...register("name")} className='contact-input w-[50%] ' type='text' placeholder='Name'/>
               <input {...register("email")} className='contact-input w-[50%]' type='text' placeholder='Email'/>

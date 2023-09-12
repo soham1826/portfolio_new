@@ -35,15 +35,18 @@ const About = () => {
           <div className="flex flex-col md:px-2 h-56 md:h-[300px] xl:h-[500px]">
 
            <h4 className="font-poppins text-3xl text-Swhite mt-3">Some Info About me</h4>
-            <p className="mt-3 font-roboto text-xl xl:text-2xl font-light text-Scream space-y-10">
+            <p className="mt-3 font-poppins text-xl xl:text-3xl font-light text-Scream space-y-">
            
-            👋 Hey there, I'm Soham Kulkarni, an enthusiastic third-year Computer Engineering student hailing from the vibrant city of Nashik, Maharashtra, India. 🌆<br/>
+            👋 Hey there, I'm <span className="text-Swhite">Soham Kulkarni</span>, an enthusiastic Web-developer and Computer Engineering student hailing from the vibrant city of Nashik, Maharashtra, India. 🌆<br/><br/>
 
-            🌐 Embarking on an exhilarating journey into the world of web development two years ago, I've been on a relentless quest to blend creativity with code.<br/> 🚀 Through hands-on experiences and practical projects, I've refined my skills and unleashed innovative digital solutions.<br/>
-
+            🌐 Embarking on an exhilarating journey into the world of web development two years ago, I've been on a relentless quest to blend creativity with code.<br/><br/> 
+            
+            🚀 Through hands-on experiences and practical projects, I've refined my skills and unleashed innovative digital solutions.<br/>
+            <span className="hidden">
             🎙️ Beyond the screen, I wield the power of words as a skilled speaker, captivating audiences with compelling narratives and dynamic presentations.<br/>
 
             🎓 As I continue my educational journey while navigating the ever-evolving tech landscape, I invite you to explore my portfolio—a fusion of creativity, innovation, and a touch of coding magic. 🖋️🌟 Join me in shaping the digital realm with pixels, prose, and passion!
+            </span>
             </p>
           </div>
           

@@ -9,12 +9,12 @@ import Link from "next/link"
 
 const page = () => {
   return (
-    <div className="font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto snap-y snap-mandatory main scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
+    <div className="font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto snap-y snap-mandatory main scrollbar-none scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
       <SocialNav/>
       <section id="Hero" className=" snap-center" >
           <Hero/>
       </section>
-      <section id="About" className=" snap-start xl:overflow-y-hidden overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
+      <section id="About" className=" snap-start xl:overflow-y-hidden overflow-y-hidden  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
         <About/>
       </section>
       <section id="Skills" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
@@ -23,20 +23,20 @@ const page = () => {
       <section id="Experiance" className=" snap-center overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Experiance/>
       </section>
-      <section id="Projects" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
+      <section id="Projects" className=" snap-center overflow-x-auto ">
         <Projects/>
       </section>
       <section id="Contact" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Contact/>
       </section>
 
-      <Link href="/#Hero">
-          <footer className="sticky bottom-3 w-full cursor-pointer">
-            <div className="flex justify-end items-center p-3">
-              <img className="h-10 w-10 rounded-full grayscale hover:grayscale-0" src="assets/hero.png"/>
+          <footer className="sticky xl:bottom-5 bottom-8 w-full cursor-pointer">
+            <div className="flex justify-center items-center px-5">
+            <Link href="/#Hero">
+              <img className="h-10 w-10  opacity-50 rounded-full grayscale hover:grayscale-0" src="assets/hero.png"/>
+            </Link>
             </div>
           </footer>
-      </Link>
 
 
 
