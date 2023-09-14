@@ -21,7 +21,7 @@ const Contact = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}  
     transition={{duration:1.5}}
-    className="h-screen flex flex-col items-center mt-20 overflow-x-auto ">
+    className="h-screen flex flex-col items-center mt-36 overflow-x-auto ">
         <h3 className="xl:text-4xl text-3xl text-Scream tracking-[20px] font-poppins uppercase">CONTACT</h3>
 
         <div className='h-full text-center items-center justify-start flex flex-col space-y-10 mt-12'>

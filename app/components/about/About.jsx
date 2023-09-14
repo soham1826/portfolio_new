@@ -3,16 +3,12 @@
 import { motion } from "framer-motion"
 const About = () => {
   return (
-      <div className="h-screen py-5 my-5">
-
-
+      <div className="h-screen mt-40">
         <div className="text-center">
           <h3 className="text-4xl tracking-[20px] uppercase text-Scream font-poppins">About</h3>
         </div>
 
-        <div className="flex flex-col xl:flex-row text-center xl:text-left mt-8 spacing-y-10 items-center gap-5 xl:px-[8rem] px-4 xl:justify-center h-full ">
-
-
+        <div className="flex flex-col xl:flex-row text-center xl:text-left spacing-y-10 items-center gap-5 xl:px-[8rem] px-4 xl:justify-center h-full ">
           <motion.img 
           initial={{
             x:-200,
@@ -35,7 +31,7 @@ const About = () => {
           <div className="flex flex-col md:px-2 h-56 md:h-[300px] xl:h-[500px]">
 
            <h4 className="font-poppins text-3xl text-Swhite mt-3">Some Info About me</h4>
-            <p className="mt-3 font-poppins text-xl xl:text-3xl font-light text-Scream space-y-">
+            <p className="mt-3 font-roboto text-xl md:text-3xl xl:text-3xl font-light text-Scream space-y-">
            
             👋 Hey there, I'm <span className="text-Swhite">Soham Kulkarni</span>, an enthusiastic Web-developer and Computer Engineering student hailing from the vibrant city of Nashik, Maharashtra, India. 🌆<br/><br/>
 

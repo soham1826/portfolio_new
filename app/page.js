@@ -6,15 +6,16 @@ import Experiance from "./components/experiance/Experiance"
 import Projects from "./components/projects/Projects"
 import Contact from "./components/contact/Contact"
 import Link from "next/link"
+import Nav from "./components/Nav"
 
 const page = () => {
   return (
     <div className="font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto snap-y snap-mandatory main scrollbar-none scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
-      <SocialNav/>
+      <Nav/>
       <section id="Hero" className=" snap-center" >
           <Hero/>
       </section>
-      <section id="About" className=" snap-start xl:overflow-y-hidden overflow-y-hidden  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
+      <section id="About" className=" snap-start xl:overflow-y-hidden overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
         <About/>
       </section>
       <section id="Skills" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
@@ -23,7 +24,7 @@ const page = () => {
       <section id="Experiance" className=" snap-center overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Experiance/>
       </section>
-      <section id="Projects" className=" snap-center overflow-x-auto ">
+      <section id="Projects" className="snap-center">
         <Projects/>
       </section>
       <section id="Contact" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">

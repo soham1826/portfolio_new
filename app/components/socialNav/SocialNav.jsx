@@ -7,7 +7,7 @@ const SocialNav = () => {
 const [toggleDropdown ,setToggleDropdown] = useState(false)
     
   return (
-    <div className="w-full md:p-5 flex flex-row items-center p-3 justify-between  md:ml-10 sticky top-0 h-14">
+    <div className="w-full md:p-5 flex flex-row items-center p-3 justify-center h-14">
         {/* Desktop Navigation */}
         <motion.div
         initial={{
@@ -24,7 +24,7 @@ const [toggleDropdown ,setToggleDropdown] = useState(false)
             duration:1.2
         }}
 
-        className="md:flex md:flex-row items-center md:gap-4 gap-3 sm:gap-2 hidden ">
+        className="flex flex-row items-center md:gap-4 gap-3 sm:gap-2  ">
         <SocialIcon className="hover:scale-[1.2]" url="https://github.com/soham1826" fgColor="white" bgColor="transparent"/>
 
         <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://www.linkedin.com/in/soham-ashok-kulkarni/" bgColor="transparent" />
@@ -33,10 +33,12 @@ const [toggleDropdown ,setToggleDropdown] = useState(false)
 
         <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://www.instagram.com/soham.jsx/" bgColor="transparent" />
 
+        <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="mailto:soham18262@gmail.com" bgColor="transparent" />
+
         </motion.div>
 
         {/* mobile Navigation */}
-        <motion.div
+        {/* <motion.div
             initial={{
                 opacity:0,
                 x :-300,
@@ -82,29 +84,7 @@ const [toggleDropdown ,setToggleDropdown] = useState(false)
                 <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://www.instagram.com/soham.jsx/" bgColor="transparent" />
             </motion.div>
      
-        )}
-
-
-        <motion.div
-        initial={{
-            opacity:0,
-            x :300,
-            scale:0.5
-        }}
-        animate={{
-            x:0,
-            scale:1,
-            opacity:1
-        }}
-        transition={{
-            duration:1.2
-        }}
-        className="flex flex-row items-center justify-center p-3 md:mr-12">
-        <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="mailto:soham18262@gmail.com" bgColor="transparent" />
-        <p className="font-poppins text-Swhite">Email</p>
-        </motion.div>
-
-            
+        )} */}
 
      
 

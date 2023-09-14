@@ -9,7 +9,7 @@ const Experiance = () => {
     initial={{opacity:0}}
     whileInView={{opacity:1}}
     transition={{duration:1.5}}
-    className="h-screen flex flex-col  items-center overflow-x-auto ">
+    className="h-screen flex flex-col  items-center overflow-x-auto mt-40 ">
         <h3 className="xl:text-4xl text-3xl text-Scream tracking-[20px] font-poppins uppercase mt-10">Experiance</h3>
         <p className="uppercase font-poppins text-xl text-gray-300 opacity-20 tracking-wider mt-2 flex flex-row items-center gap-2">Scroll for more <span><ArrowRightCircleIcon className="w-10"/></span> </p>
 

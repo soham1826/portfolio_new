@@ -4,6 +4,7 @@ import Heading from '../Heading'
 import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
 import Nav from '../Nav'
+import SocialNav from '../socialNav/SocialNav'
 
 const Hero = () => {
   return (
@@ -20,7 +21,8 @@ const Hero = () => {
         }}/>
       </h1>
 
-      <Nav/>
+
+     <SocialNav/>
 
   
     </div>
