@@ -16,24 +16,24 @@ import Nav from "./components/Nav"
 
 const page = () => {
   return (
-    <div className=" scroll-smooth font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto main scrollbar-none scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
+    <div className=" snap-y snap-mandatory  font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto main scrollbar-none scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
       <Nav/>
-      <section id="Hero" className=" " >
+      <section id="Hero" className=" snap-center " >
           <Hero/>
       </section>
-      <section id="About" className="  xl:overflow-y-hidden overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
+      <section id="About" className=" snap-start  xl:overflow-y-hidden overflow-y-auto overflow-x-hidden  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
         <About/>
       </section>
-      <section id="Skills" className="  overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
+      <section id="Skills" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Skills/>
       </section>
-      <section id="Experiance" className="  overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
+      <section id="Experiance" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Experiance/>
       </section>
-      <section id="Projects" className="">
+      <section id="Projects" className="snap-start">
         <Projects/>
       </section>
-      <section id="Contact" className=" overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
+      <section id="Contact" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Contact/>
       </section>
 

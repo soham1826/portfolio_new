@@ -5,12 +5,10 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
   return (
-    <div className="h-screen mt-40">
-      <div className="text-center m-4" >
-        <h3 className="uppercase tracking-[20px] text-Scream font-poppins mt-16 text-4xl">Skills</h3>
-        <p className="uppercase font-poppins text-xl text-gray-300 opacity-20 tracking-wider mb-12 mt-2"> Hover/Click Over to see proficiancy</p>
-      </div>
-      
+    <div className="h-screen w-screen flex flex-col gap-8 items-center justify-center">
+      <div className="h-[80%] w-screen flex flex-col mt-10">
+        <h3 className="uppercase tracking-[20px] text-Scream font-poppins md:text-4xl text-3xl  text-center">Skills</h3>
+        <p className="uppercase font-poppins text-xl text-gray-300 opacity-20 tracking-wider text-center mt-2"> Hover/Click Over to see proficiancy</p>
       <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
@@ -46,6 +44,8 @@ const Skills = () => {
      
       </div>
     </motion.div>
+      </div>
+      
     </div>
     
 

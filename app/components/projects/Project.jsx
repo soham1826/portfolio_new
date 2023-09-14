@@ -8,7 +8,7 @@ import { Carousel } from "@material-tailwind/react";
 
 const Project = () => {
   return (
-    <div className="w-screen h-auto flex-shrink-0  flex flex-col space-y-5 items-center justify-center p-12 md:p-22  text-center overflow-y-auto ">
+    <div className="w-screen h-auto  flex flex-col space-y-5 items-center justify-center px-10 md:px-20  text-center ">
       <motion.div
       initial={{
         opacity: 0,
@@ -35,7 +35,7 @@ const Project = () => {
           width={1000}
           height={1000}
         />
-        <p className="xl:text-2xl md:text-2xl text-xl text-Swhite xl:w-[60%] font-poppins ">
+        <p className="xl:text-2xl md:text-xl text-lg text-Swhite xl:w-[60%] font-poppins px-3 ">
           A Fullstack web-app where you can list yourself as a artist in
           differnt arts and customers can get to know your details and hire you
         </p>
