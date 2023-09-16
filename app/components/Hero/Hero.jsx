@@ -12,7 +12,7 @@ const Hero = () => {
       <Image className="rounded-full w-[200px] h-[200px] object-cover" alt ="My image" src="/assets/hero10.png" width={200} height={200}/>
       <p className="uppercase opacity-2 tracking-[10px] md:text-[20px]
       xs:text-[10px] text-Swhite opacity-20 font-poppins mt-2">software Developer</p>
-      <h1 className="md:text-[2.5rem] text-[1.5rem] font-poppins text-transparent bg-gradient-to-r from-Sgold to-Syellow bg-clip-text mt-2">
+      <h1 className="md:text-[2.5rem] text-[1.5rem] font-poppins text-Scream mt-2">
         <Typewriter options={{
           strings:["I'm Soham Kulkarni",'<% WEB-DEVELOPER %>','<% FRONT-END %>','<% BACK-END %>'],
           autoStart:true,
