@@ -204,7 +204,7 @@ const Nav = () => {
                <EnvelopeIcon className="mobile-nav-icon"/>
                Contact
              </a>
-             <button className="p-4 text-Sblack bg-Scream rounded-md w-auto h-auto items-center justify-center ml-14  mt-2">
+             <button className="p-4 resume-button rounded-md w-auto h-auto items-center justify-center ml-14  mt-2">
               Resume
              </button>
    

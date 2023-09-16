@@ -16,7 +16,12 @@ module.exports = {
         Sred:"#E74646",
         Spurple:"#9336B4",
         Snavy:"#252B48",
-        Syellow:"#F7E987"
+        Syellow:"#F7E987",
+        Soccur:"#F6AB0A",
+        Speach:"#DC6D69",
+        Srose:"#B8335D",
+        Sgold:"#D3AA02",
+        Sgradient:"bg-gradient-to-r from-[#B8335D] to-[#DC6D69]"
       },
       fontFamily:{
         poppins: ['Poppins', 'sans-serif'],
