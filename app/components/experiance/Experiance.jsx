@@ -3,7 +3,8 @@ import ExperianceCard from "./ExperianceCard"
 import { motion } from "framer-motion"
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid"
 
-const Experiance = () => {
+const Experiance = ({experience}) => {
+ 
   return (
     <motion.div
     initial={{opacity:0}}
@@ -17,10 +18,12 @@ const Experiance = () => {
         <div 
         
         className="w-full flex space-x-5 overflow-x-scroll snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-Scream py-5 overflow-y-auto  ">
-            <ExperianceCard/>
-            <ExperianceCard/>
-            <ExperianceCard/>
-            <ExperianceCard/>
+          {experience.map((exp,index)=><ExperianceCard key={index}
+          jobTitle = {exp.jobTitle} compImage= {exp.compImage} company={exp.company} dateStarted = {exp.dateStarted} dateEnded={exp.dateEnded}  workingStatus={exp.isCurrentlyWorkingHere} techs={exp.technologies}
+          points={exp.points}
+          />)}
+            
+            
         </div>
       </div>
         

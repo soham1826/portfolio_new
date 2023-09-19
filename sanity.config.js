@@ -5,6 +5,7 @@ import pageInfo from './sanity/schemas/pageInfo';
 import skill from './sanity/schemas/skill';
 import social from './sanity/schemas/social';
 import project from './sanity/schemas/project';
+import otherProject from './sanity/schemas/otherProject';
 
 const config = defineConfig({
     projectId:process.env.NEXT_PUBLIC_PROJECT_ID,
@@ -13,7 +14,7 @@ const config = defineConfig({
     apiVersion:"2023-09-16",
     basePath:"/studio",
     plugins:[deskTool()],
-    schema:{types:[pageInfo,experience,skill,social,project]}
+    schema:{types:[pageInfo,experience,skill,social,project, otherProject]}
 })
 
 export default config;

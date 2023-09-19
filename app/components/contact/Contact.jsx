@@ -10,7 +10,7 @@ import {
 import { SocialIcon } from "react-social-icons";
 import { useForm } from "react-hook-form";
 
-const Contact = () => {
+const Contact = ({pageInfo}) => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (formData) => {
@@ -38,15 +38,15 @@ const Contact = () => {
           <div className="flex flex-col space-y-5">
             <div className="flex items-center space-x-5 justify-center text-Swhite font-poppins xl:text-xl text-lg gap-2">
               <PhoneIcon className="text-Scream h-7 w-7 animate-bounce" />{" "}
-              +919356561034
+              {pageInfo[0].phoneNumber}
             </div>
             <div className="flex items-center space-x-5 gap-2 justify-center text-Swhite font-poppins xl:text-xl text-lg">
               <EnvelopeIcon className="text-Scream h-7 w-7 animate-bounce" />{" "}
-              kulsoham18262@gmail.com
+              {pageInfo[0].email}
             </div>
             <div className="flex items-center space-x-5 justify-center text-Swhite font-poppins xl:text-xl text-lg gap-2">
               <MapPinIcon className="text-Scream h-7 w-7 animate-bounce" />
-              Nashik, Maharashtra, India
+              {pageInfo[0].address}
             </div>
           </div>
 

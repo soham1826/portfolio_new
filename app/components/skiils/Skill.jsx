@@ -7,7 +7,7 @@ import { CircularProgress } from "@mui/material"
 import Image from "next/image"
 
 
-const Skill = ({imageSrc , bgColor,completed,techName}) => {
+const Skill = ({imageSrc,completed,techName,imageUrl,bgcolor}) => {
   const [percent, setPercent] = useState(0);
   return (
     <motion.div 
@@ -26,7 +26,7 @@ const Skill = ({imageSrc , bgColor,completed,techName}) => {
     }}
     className=" group flex relative cursor-pointer">
       <Image 
-      src="/assets/react.svg" className="rounded-md w-16 h-16 border border-Scream object-contain xl:h-32 xl:w-32 md:h-24 md:w-24 filter group-hover:grayscale transition duration-300 ease-in-out" width={300} height={300} alt="image"/>
+      src={imageUrl} className={`rounded-md w-16 h-16 border-2 border-Scream object-contain xl:h-32 xl:w-32 md:h-24 md:w-24 filter group-hover:grayscale transition duration-300 ease-in-out bg-Snavy p-2`} width={300} height={300} alt="image"/>
 
       <div className="absolute opacity-0 group-hover:opacity-90 transition duration-100 ease-in-out group-hover:bg-Scream w-16 h-16 xl:h-32 xl:w-32 md:h-24 md:w-24 rounded-md " onMouseEnter={()=>{setTimeout(()=>{setPercent(completed)},500);}}
         onMouseLeave={()=>{setPercent(0)}}>

@@ -26,6 +26,11 @@ const skill  = {
                 hotspot:true,
             }
         },
+        {
+            name:"bgcolor",
+            title:"Bgcolor",
+            type:"string"
+        }
         
         
         

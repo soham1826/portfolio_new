@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect'
 import Nav from '../Nav'
 import SocialNav from '../socialNav/SocialNav'
 
-const Hero = ({pageInfo}) => {
+const Hero = ({pageInfo,social}) => {
   return (
     <div className="flex flex-col justify-center items-center mt-6 h-screen w-full p-2 text-center" >
       <Image className="rounded-full w-[200px] h-[200px] object-cover" alt ="My image" src={pageInfo[0].heroImage} width={200} height={200}/>
@@ -24,7 +24,7 @@ const Hero = ({pageInfo}) => {
       </h1>
 
 
-     <SocialNav/>
+     <SocialNav social={social}/>
 
   
     </div>

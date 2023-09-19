@@ -51,6 +51,11 @@ const pageInfo = {
             type:"string"
         },
         {
+            name:"resumeUrl",
+            title:"ResumeUrl",
+            type:"url"
+        },
+        {
             name:"socials",
             title:"Socials",
             type:"array",

@@ -3,7 +3,8 @@ import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import {useState} from "react"
 
-const SocialNav = () => {
+const SocialNav = ({social}) => {
+// console.log(social)
 const [toggleDropdown ,setToggleDropdown] = useState(false)
     
   return (
@@ -24,15 +25,12 @@ const [toggleDropdown ,setToggleDropdown] = useState(false)
             duration:1.2
         }}
 
+        
         className="flex flex-row items-center md:gap-4 gap-3 sm:gap-2  ">
-        <SocialIcon className="hover:scale-[1.2]" url="https://github.com/soham1826" fgColor="white" bgColor="transparent"/>
 
-        <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://www.linkedin.com/in/soham-ashok-kulkarni/" bgColor="transparent" />
-
-        <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://twitter.com/kulsoham18262" bgColor="transparent" />
-
-        <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="https://www.instagram.com/soham.jsx/" bgColor="transparent" />
-
+        {social.map((social,index) => <SocialIcon key={index} className="hover:scale-[1.2]" url={social.url} fgColor="white" bgColor="transparent"/>
+            )}
+    
         <SocialIcon className="hover:scale-[1.2]" fgColor="white" url="mailto:soham18262@gmail.com" bgColor="transparent" />
 
         </motion.div>

@@ -12,7 +12,8 @@ import "react-multi-carousel/lib/styles.css";
 import OtherProjects from "./OtherProjects";
 import { FolderIcon } from "@heroicons/react/24/outline";
 
-const Projects = () => {
+const Projects = ({projects,otherProjects}) => {
+  const projectsNew = projects.reverse();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -32,7 +33,6 @@ const Projects = () => {
       items: 1,
     },
   };
-  const projects = [1, 2, 3, 4, 5];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -57,19 +57,12 @@ const Projects = () => {
             responsive={responsive}
             className="w-screen h-auto"
           >
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            {projectsNew.map((project,index)=> <Project key={index} title={project.title} image={project.image} summary={project.summary} sourceCode={project.linktoSourceCode} demo={project.linktoDemo} technologies={project.technologies} />)}
+           
+          
             <div className="flex justify-center items-center h-fit w-full">
-            <div className="w-full h-full bg-Sblack xl:px-40 md:px-32 px-10 grid justify-center items-center gap-x-0 xl:grid-cols-5 md:grid-cols-4 grid-cols-2 ml-4">
-              <OtherProjects/>
-              <OtherProjects/>
-              <OtherProjects/>
-              <OtherProjects/>
-              <OtherProjects/>
-              <OtherProjects/>
-              
+            <div className="w-full h-full bg-Sblack xl:px-40 md:px-32 px-10 grid justify-center items-center gap-x-0 xl:grid-cols-4 md:grid-cols-4 grid-cols-2 ml-4">
+              {otherProjects.map((otherProject,index)=><OtherProjects key={index} title={otherProject.title} sourceCode={otherProject.linktoSourceCode} />)}
             </div>
             </div>
             

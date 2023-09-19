@@ -14,7 +14,7 @@ import {
   Bars3BottomRightIcon,
   XCircleIcon,
 } from "@heroicons/react/24/outline";
-const Nav = () => {
+const Nav = ({pageInfo}) => {
   const [ToggleMobile, SetToggleMobile] = useState(false);
   const handleOpen = () => {
     SetToggleMobile(true)
@@ -114,7 +114,7 @@ const Nav = () => {
             Contact
           </a>
         </div>
-        <div className="resume-button lg:flex hidden">Resume</div>
+        <Link href={pageInfo[0].resumeUrl} className="resume-button lg:flex hidden">Resume</Link>
 
         <button
           className="w-10 h-10 text-Scream flex lg:hidden"
@@ -204,9 +204,9 @@ const Nav = () => {
                <EnvelopeIcon className="mobile-nav-icon"/>
                Contact
              </a>
-             <button className="p-4 resume-button rounded-md w-auto h-auto items-center justify-center ml-14  mt-2">
+             <Link href={pageInfo[0].resumeUrl} className="p-4 resume-button rounded-md w-auto h-auto items-center justify-center ml-14  mt-2">
               Resume
-             </button>
+             </Link>
    
              
 
