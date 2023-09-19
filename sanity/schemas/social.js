@@ -1,4 +1,4 @@
-export default {
+const social = {
     name:'social',
     title:'Social',
     type:'document',
@@ -18,3 +18,5 @@ export default {
         },    
     ]
 }
+
+export default social;

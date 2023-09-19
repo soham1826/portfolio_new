@@ -1,4 +1,4 @@
-export default {
+const pageInfo = {
     name:'pageInfo',
     title:'PageInfo',
     type:'document',
@@ -58,3 +58,4 @@ export default {
         }
     ]
 }
+export default pageInfo;

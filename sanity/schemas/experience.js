@@ -1,4 +1,4 @@
-export default {
+const experience = {
     name:'experience',
     title:'Experience',
     type:'document',
@@ -54,3 +54,5 @@ export default {
         
     ]
 }
+
+export default experience;

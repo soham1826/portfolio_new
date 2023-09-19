@@ -1,4 +1,4 @@
-export default {
+const skill  = {
     name:'skill',
     title:'Skill',
     type:'document',
@@ -31,3 +31,4 @@ export default {
         
     ]
 }
+export default skill;

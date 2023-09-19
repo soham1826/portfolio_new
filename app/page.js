@@ -7,6 +7,9 @@ import Projects from "./components/projects/Projects"
 import Contact from "./components/contact/Contact"
 import Link from "next/link"
 import Nav from "./components/Nav"
+import { getAbout } from "@/sanity/sanity-utils"
+
+export const revalidate = 5;
 
 // snap-y snap-mandatory 
 // snap-center
@@ -14,15 +17,17 @@ import Nav from "./components/Nav"
 // snap-start
 
 
-const page = () => {
+export async function Page(){
+  const pageInfo  = await getAbout();
+  
   return (
     <div className=" snap-y snap-mandatory  font-bold h-screen w-full bg-[#1A1C20] overflow-x-hidden overflow-y-auto main scrollbar-none scrollbar-track-gray-400/20 scrollbar-thumb-Scream">
       <Nav/>
       <section id="Hero" className=" snap-center " >
-          <Hero/>
+          <Hero pageInfo={pageInfo} />
       </section>
       <section id="About" className=" snap-start  xl:overflow-y-hidden overflow-y-auto overflow-x-hidden  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin ">
-        <About/>
+        <About pageInfo={pageInfo}/>
       </section>
       <section id="Skills" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
         <Skills/>
@@ -50,5 +55,10 @@ const page = () => {
     </div>
   )
 }
+export default Page;
 
-export default page
+export async function getServerSideProps(){
+  const res = await getAbout()
+  const pageInfo = await res.json()
+  return {props:{pageInfo}}
+}
