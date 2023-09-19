@@ -57,8 +57,3 @@ export async function Page(){
 }
 export default Page;
 
-export async function getServerSideProps(){
-  const res = await getAbout()
-  const pageInfo = await res.json()
-  return {props:{pageInfo}}
-}
