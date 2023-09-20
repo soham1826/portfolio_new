@@ -1,14 +1,25 @@
 "use client"
 import React from 'react'
-import Heading from '../Heading'
 import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
-import Nav from '../Nav'
 import SocialNav from '../socialNav/SocialNav'
-
+import { motion } from 'framer-motion'
 const Hero = ({pageInfo,social}) => {
   return (
-    <div className="flex flex-col justify-center items-center mt-6 h-screen w-full p-2 text-center" >
+    <motion.div 
+    initial={{
+      opacity:0,
+      y:200,
+    }}
+    whileInView={{
+      y:0,
+      opacity:1
+    }}
+    viewport={{once:true}}
+    transition={{
+      duration:1.25
+    }}
+    className="flex flex-col justify-center items-center mt-6 h-screen w-full p-2 text-center" >
       <Image className="rounded-full w-[200px] h-[200px] object-cover" alt ="My image" src={pageInfo[0].heroImage} width={200} height={200}/>
       <p className="uppercase opacity-2 tracking-[10px] md:text-[20px]
       xs:text-[10px] text-Swhite opacity-20 font-poppins mt-2">
@@ -27,7 +38,7 @@ const Hero = ({pageInfo,social}) => {
      <SocialNav social={social}/>
 
   
-    </div>
+    </motion.div>
     
   )
 }

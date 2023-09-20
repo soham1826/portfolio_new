@@ -14,16 +14,15 @@ import {
   Bars3BottomRightIcon,
   XCircleIcon,
 } from "@heroicons/react/24/outline";
-const Nav = ({pageInfo}) => {
+const Nav = ({ pageInfo }) => {
   const [ToggleMobile, SetToggleMobile] = useState(false);
   const handleOpen = () => {
-    SetToggleMobile(true)
-    ;
+    SetToggleMobile(true);
   };
   const handleClose = () => {
-    setTimeout(()=>{
-      SetToggleMobile(false)
-    },500)
+    setTimeout(() => {
+      SetToggleMobile(false);
+    }, 500);
   };
 
   {
@@ -63,7 +62,23 @@ const Nav = ({pageInfo}) => {
 
   return (
     <nav className="sticky top-0 font-poppins text-xl p-4 z-20 bg-Sblack border-b border-Sblack ">
-      <div className="w-full justify-between items-center flex flex-row h-auto">
+      <motion.div
+        initial={{
+          y: 200,
+          opacity: 0,
+        }}
+        whileInView={{
+          y: 0,
+          opacity: 1,
+        }}
+        viewport={{
+          once: true,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        className="w-full justify-between items-center flex flex-row h-auto"
+      >
         {/* logo */}
         <a href="#Hero" className="flex space-x-2 items-center cursor-pointer">
           <CodeBracketSquareIcon className="w-10 h-10 text-Scream animate-pulse" />
@@ -90,7 +105,7 @@ const Nav = ({pageInfo}) => {
             className="nav-link2 flex flex-row gap-1 items-center group w-[100px] justify-start mx-3 "
           >
             <TrophyIcon className="mobile-nav-icon group-hover:animate-bounce" />
-            Skills 
+            Skills
           </a>
           <a
             href="#Experiance "
@@ -114,7 +129,12 @@ const Nav = ({pageInfo}) => {
             Contact
           </a>
         </div>
-        <Link href={pageInfo[0].resumeUrl} className="resume-button lg:flex hidden">Resume</Link>
+        <a
+          href={pageInfo[0].resumeUrl}
+          className="resume-button lg:flex hidden"
+        >
+          Resume
+        </a>
 
         <button
           className="w-10 h-10 text-Scream flex lg:hidden"
@@ -122,7 +142,7 @@ const Nav = ({pageInfo}) => {
         >
           <Bars3BottomRightIcon />
         </button>
-      </div>
+      </motion.div>
       {/* Mobile Navigation */}
 
       {ToggleMobile && (
@@ -180,36 +200,53 @@ const Nav = ({pageInfo}) => {
               <p>Home</p>
             </a>
 
-            <a href="#About " className="nav-link2 flex flex-row gap-1 items-center group w-full p-4 justify-start ml-12" onClick={handleClose}>
-               <UserCircleIcon className="mobile-nav-icon"/>
-               About
-               </a>
+            <a
+              href="#About "
+              className="nav-link2 flex flex-row gap-1 items-center group w-full p-4 justify-start ml-12"
+              onClick={handleClose}
+            >
+              <UserCircleIcon className="mobile-nav-icon" />
+              About
+            </a>
 
-               <a href="#Skills " className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12" onClick={handleClose}>
-               <TrophyIcon className="mobile-nav-icon"/>
-               Skills
-   
-               </a>
-             <a href="#Experiance " className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12" onClick={handleClose}>
-               <BriefcaseIcon className="mobile-nav-icon"/>
-               Experiance
-   
-               </a>
-             <a href="#Projects " className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12" onClick={handleClose}>
-               <PuzzlePieceIcon className="mobile-nav-icon"/>
-               Projects
-   
-               </a>
-             <a href="#Contact " className="nav-link2 p-4 flex flex-row items-center group w-full justify-start ml-12 gap-1" onClick={handleClose}>
-               <EnvelopeIcon className="mobile-nav-icon"/>
-               Contact
-             </a>
-             <Link href={pageInfo[0].resumeUrl} className="p-4 resume-button rounded-md w-auto h-auto items-center justify-center ml-14  mt-2">
+            <a
+              href="#Skills "
+              className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12"
+              onClick={handleClose}
+            >
+              <TrophyIcon className="mobile-nav-icon" />
+              Skills
+            </a>
+            <a
+              href="#Experiance "
+              className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12"
+              onClick={handleClose}
+            >
+              <BriefcaseIcon className="mobile-nav-icon" />
+              Experiance
+            </a>
+            <a
+              href="#Projects "
+              className="nav-link2 p-4 flex flex-row gap-1 items-center group w-full justify-start ml-12"
+              onClick={handleClose}
+            >
+              <PuzzlePieceIcon className="mobile-nav-icon" />
+              Projects
+            </a>
+            <a
+              href="#Contact "
+              className="nav-link2 p-4 flex flex-row items-center group w-full justify-start ml-12 gap-1"
+              onClick={handleClose}
+            >
+              <EnvelopeIcon className="mobile-nav-icon" />
+              Contact
+            </a>
+            <a
+              href={pageInfo[0].resumeUrl}
+              className="p-4 resume-button rounded-md w-auto h-auto items-center justify-center ml-14  mt-2"
+            >
               Resume
-             </Link>
-   
-             
-
+            </a>
           </motion.div>
         </motion.div>
       )}
@@ -218,7 +255,9 @@ const Nav = ({pageInfo}) => {
         className={`absolute w-screen h-screen bg-transparent lg:hidden  ${
           ToggleMobile ? "backdrop-blur-sm" : ""
         } ${ToggleMobile ? "flex" : "hidden"} `}
-      ></div>
+      >
+
+      </div>
     </nav>
   );
 };

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { SiGithub, SiAirplayvideo } from "react-icons/si";
-import Link from "next/link";
+
 
 
 const Project = ({title,image,demo,sourceCode,summary,technologies}) => {
@@ -40,20 +40,20 @@ const Project = ({title,image,demo,sourceCode,summary,technologies}) => {
         </p>
 
         <div className="flex flex-row gap-2">
-        <Link
+        <a
           href={sourceCode}
           className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[180px] h-auto"
         >
           <SiGithub />
           <p>Source Code</p>
-        </Link>
-        <Link
+        </a>
+        <a
           href={demo}
           className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[180px] h-auto"
         >
           <SiAirplayvideo />
           <p>Demo</p>
-        </Link>
+        </a>
       </div>
 
       <div className="flex flex-row gap-4 items-center justify-evenly">
