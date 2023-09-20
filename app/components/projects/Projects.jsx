@@ -53,7 +53,6 @@ const Projects = ({projects,otherProjects}) => {
 
         <div className="w-full h-auto mt-8">
           <Carousel
-            renderButtonGroupOutside={true}
             responsive={responsive}
             className="w-screen h-auto"
           >
