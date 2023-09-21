@@ -18,7 +18,7 @@ const About= ({pageInfo}) => {
       <div className="flex xl:flex-row md:flex-col flex-col text-center xl:text-left justify-center items-center w-full h-fit gap-5 mt-10">
         <motion.img
           initial={{
-            x: -200,
+            x: -100,
             opacity: 0,
           }}
           whileInView={{
@@ -36,7 +36,7 @@ const About= ({pageInfo}) => {
           />
 
         <div className="flex flex-col">
-          <h4 className="font-poppins text-3xl text-Swhite mt-3 text-center">
+          <h4 className="font-poppins xl:text-3xl text-2xl md:text-3xl text-Swhite mt-3 text-center">
             Some Info About me
           </h4>
           <p className="mt-3 font-roboto text-lg md:text-xl xl:text-3xl font-light text-Scream space-y-">

@@ -9,13 +9,18 @@ import {
 } from "@heroicons/react/24/solid";
 import { SocialIcon } from "react-social-icons";
 import { useForm } from "react-hook-form";
+import SocialNav from "../socialNav/SocialNav";
 
-const Contact = ({pageInfo}) => {
+const Contact = ({pageInfo, social}) => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (formData) => {
     window.location.href = `mailto:kulsoham18262@gmail.com?subject=${formData.subject}&body= Hi my name is ${formData.name}, ${formData.message} (${formData.email})`;
   };
+
+  const getCurrentYear =()=> {
+    return new Date().getFullYear();
+  }
 
   return (
     <motion.div
@@ -58,80 +63,42 @@ const Contact = ({pageInfo}) => {
             <div className="flex space-x-2 ">
               <input
                 {...register("name")}
-                className="contact-input w-[50%] "
+                className="contact-input-new
+                 w-[50%] "
                 type="text"
                 placeholder="Name"
               />
               <input
                 {...register("email")}
-                className="contact-input w-[50%]"
+                className="contact-input-new
+                 w-[50%]"
                 type="text"
                 placeholder="Email"
               />
             </div>
             <input
               {...register("subject")}
-              className="contact-input w-[100%]"
+              className="contact-input-new
+               w-[100%]"
               type="text"
               placeholder="Subject"
             />
             <textarea
               {...register("message")}
-              className="contact-input w-[100%]"
+              className="contact-input-new
+               w-[100%]"
               placeholder="Message"
             />
             <button className="bg-Scream p-3 rounded-md text-Sblack">
               Submit
             </button>
           </form>
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 100,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 1.2,
-            }}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row items-center justify-center gap-4 "
-          >
-            <SocialIcon
-              className="hover:scale-[1.2] w-4  p-2 "
-              url="https://github.com/soham1826"
-              fgColor="white"
-              bgColor="transparent"
-            />
-
-            <SocialIcon
-              className="hover:scale-[1.2] w-4 "
-              fgColor="Blue"
-              url="https://www.linkedin.com/in/soham-ashok-kulkarni/"
-              bgColor="transparent"
-            />
-
-            <SocialIcon
-              className="hover:scale-[1.2] "
-              fgColor="SkyBlue"
-              url="https://twitter.com/kulsoham18262"
-              bgColor="transparent"
-            />
-
-            <SocialIcon
-              className="hover:scale-[1.2]"
-              fgColor="Pink"
-              url="https://www.instagram.com/soham.jsx/"
-              bgColor="transparent"
-            />
-          </motion.div>
         </div>
+         <div className="p-3 mt-2"><SocialNav social={social}/></div>
+      <footer className="p-3 mt-1 font-poppins text-Swhite text-center"> Copyright © {getCurrentYear()} <span className="text-Scream"> Made by Soham Kulkarni</span></footer>
       </div>
+
+
     </motion.div>
   );
 };

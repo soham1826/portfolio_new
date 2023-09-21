@@ -17,7 +17,9 @@ import {
 const Nav = ({ pageInfo }) => {
   const [ToggleMobile, SetToggleMobile] = useState(false);
   const handleOpen = () => {
-    SetToggleMobile(true);
+    setTimeout(() => {
+      SetToggleMobile(true);
+    }, 400);
   };
   const handleClose = () => {
     setTimeout(() => {
@@ -147,15 +149,6 @@ const Nav = ({ pageInfo }) => {
 
       {ToggleMobile && (
         <motion.div
-          initial={{
-            x: 100,
-            opacity: 0,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-          }}
-          transition={{}}
           className=" flex-col items-center flex lg:hidden w-[60%] bg-zinc-900 h-screen justify-evenly absolute right-0 top-0 rounded-l-lg z-20 transition-all duration-10 "
         >
           <div className="flex justify-end w-full pr-2">

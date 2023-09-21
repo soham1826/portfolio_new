@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className = "w-full h-full">
+      <body className = "w-screen h-screen">
         {/* {isLoading && isHome ?<SplashScreen finishLoading={()=>setIsLoading(false)}/>: children} */}
         {children}
       </body>

@@ -25,9 +25,9 @@ const Hero = ({pageInfo,social}) => {
       xs:text-[10px] text-Swhite opacity-20 font-poppins mt-2">
         {pageInfo[0].role}
         </p>
-      <h1 className="md:text-[2.5rem] text-[1.5rem] font-poppins text-Scream mt-2">
+      <h1 className="md:text-[2.5rem] text-[2rem] font-poppins text-Scream mt-2">
         <Typewriter options={{
-          strings:[`I'm ${pageInfo[0].name}` ,'<% WEB-DEVELOPER %>','<% FRONT-END %>','<% BACK-END %>'],
+          strings:[`I'm ${pageInfo[0].name}` ,"I'm a fullstack developer",'I talk about tech', 'and other fun stuff.'],
           autoStart:true,
           loop:true,
           delay:50

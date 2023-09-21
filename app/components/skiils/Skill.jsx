@@ -10,20 +10,7 @@ import Image from "next/image"
 const Skill = ({imageSrc,completed,techName,imageUrl,bgcolor}) => {
   const [percent, setPercent] = useState(0);
   return (
-    <motion.div 
-    initial={{
-      y : 100,
-      opacity:0
-
-    }}
-    whileInView={{
-      y:0,
-      opacity:1
-    }}
-
-    transition={{
-      duration:1
-    }}
+    <div
     className=" group flex relative cursor-pointer">
       <Image 
       src={imageUrl} className={`rounded-md w-16 h-16 border-2 border-Scream object-contain xl:h-32 xl:w-32 md:h-24 md:w-24 filter group-hover:grayscale transition duration-300 ease-in-out bg-Snavy p-2`} width={300} height={300} alt="image"/>
@@ -42,7 +29,7 @@ const Skill = ({imageSrc,completed,techName,imageUrl,bgcolor}) => {
 
 
 
-    </motion.div>
+    </div>
     
     
   )

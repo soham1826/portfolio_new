@@ -30,8 +30,9 @@
     @apply  w-6 h-6 group-focus:animate-bounce text-Scream group-hover:text-Sblack
   }
 
-  .contact-input{
-    @apply outline-none bg-slate-800 rounded-md border-b-2 border-Snavy focus:border-b-Scream focus:text-Scream px-6 py-4 text-gray-500 placeholder-gray-500 hover:border-Scream 
+  .contact-input-new{
+    @apply focus:ring-Scream bg-slate-800 rounded-md
+   focus:border-Scream focus:text-Scream px-6 py-4 text-gray-500 placeholder-gray-500 hover:border-Scream 
   }
 
   .tech-names{

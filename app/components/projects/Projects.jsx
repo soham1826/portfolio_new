@@ -51,7 +51,7 @@ const Projects = ({projects,otherProjects}) => {
           </span>{" "}
         </p>
 
-        <div className="w-full h-auto mt-8">
+        <div className="w-screen h-auto mt-8">
           <Carousel
             responsive={responsive}
             className="w-screen h-auto"

@@ -9,47 +9,33 @@ import { SiGithub, SiAirplayvideo } from "react-icons/si";
 const Project = ({title,image,demo,sourceCode,summary,technologies}) => {
   return (
     <div className="w-screen h-auto  flex flex-col space-y-5 items-center justify-center px-10 md:px-20  text-center ">
-      <motion.div
-      initial={{
-        opacity: 0,
-        y: 100,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once:true
-      }}
+      <div
       className="flex flex-col items-center justify-center text-center gap-2">
-        <h3 className="text-Scream font-poppins xl:text-4xl md:text-3xl text-2xl ">
+        <h3 className="text-Scream font-poppins xl:text-4xl md:text-3xl text-xl ">
           {title}
         </h3>
         <Image
           src={image}
           alt="none"
-          className="xl:w-[600px] lg:w-[500px] md:w-[400px] w-[300px]  h-auto rounded-lg"
+          className="xl:w-[600px] lg:w-[500px] md:w-[400px] w-[200px]  h-auto rounded-lg"
           width={1000}
           height={1000}
         />
-        <p className="xl:text-2xl md:text-xl text-lg text-Swhite xl:w-[60%] font-poppins px-3 ">
+        <p className="xl:text-2xl md:text-xl text-base text-Swhite xl:w-[60%] font-poppins px-3 mt-1 ">
           {summary}
         </p>
 
         <div className="flex flex-row gap-2">
         <a
           href={sourceCode}
-          className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[180px] h-auto"
+          className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[100px] h-auto"
         >
           <SiGithub />
-          <p>Source Code</p>
+          <p>Code</p>
         </a>
         <a
           href={demo}
-          className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[180px] h-auto"
+          className="nav_link flex flex-row gap-2 font-poppins text-md items-center text-center justify-center w-[100px] h-auto"
         >
           <SiAirplayvideo />
           <p>Demo</p>
@@ -100,7 +86,7 @@ const Project = ({title,image,demo,sourceCode,summary,technologies}) => {
           className="xl:w-[50px] md:w-[50px] w-[40px] h-auto"
         /> */}
       </div>
-      </motion.div>
+      </div>
 
       
     </div>

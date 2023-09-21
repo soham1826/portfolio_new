@@ -43,16 +43,10 @@ export async function Page(){
         <Projects projects={projects} otherProjects={otherProjects}/>
       </section>
       <section id="Contact" className=" snap-start overflow-y-auto  scrollbar-track-gray-400/20 scrollbar-thumb-Scream scrollbar-thin">
-        <Contact pageInfo={pageInfo}/>
+        <Contact pageInfo={pageInfo} social={social}/>
       </section>
 
-          {/* <footer className="sticky xl:bottom-5 bottom-8 w-full cursor-pointer">
-            <div className="flex justify-center items-center px-5">
-            <Link href="/#Hero">
-              <img className="h-10 w-10  opacity-50 rounded-full grayscale hover:grayscale-0" src="assets/hero.png"/>
-            </Link>
-            </div>
-          </footer> */}
+          
 
 
 

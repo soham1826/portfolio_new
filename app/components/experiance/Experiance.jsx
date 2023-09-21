@@ -9,7 +9,7 @@ const Experiance = ({experience}) => {
     <motion.div
     initial={{opacity:0}}
     whileInView={{opacity:1}}
-    transition={{duration:1.5}}
+    transition={{duration:1}}
     className="h-screen w-screen flex flex-col items-center justify-center">
       <div className="flex flex-col h-[80%] w-screen xl:px-10 px-5 ">
       <h3 className="xl:text-4xl text-2xl text-Scream tracking-[20px] font-poppins uppercase text-center">Experiance</h3>
