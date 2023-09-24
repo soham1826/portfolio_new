@@ -21,7 +21,7 @@ const Project = ({title,image,demo,sourceCode,summary,technologies}) => {
           width={1000}
           height={1000}
         />
-        <p className="xl:text-2xl md:text-xl text-base text-Swhite xl:w-[60%] font-poppins px-3 mt-1 ">
+        <p className="xl:text-2xl md:text-xl text-base text-Swhite xl:w-[60%] font-poppins px-5 mt-1 ">
           {summary}
         </p>
 

@@ -12,7 +12,7 @@ const Experiance = ({experience}) => {
     transition={{duration:1}}
     className="h-screen w-screen flex flex-col items-center justify-center">
       <div className="flex flex-col h-[80%] w-screen xl:px-10 px-5 ">
-      <h3 className="xl:text-4xl text-2xl text-Scream tracking-[20px] font-poppins uppercase text-center">Experiance</h3>
+      <h3 className="xl:text-4xl text-2xl text-Scream tracking-[20px] font-poppins uppercase text-center">Experience</h3>
         <p className="uppercase font-poppins text-xl text-gray-300 opacity-20 tracking-wider mt-2 flex flex-row items-center justify-center gap-2">Scroll for more <span><ArrowRightCircleIcon className="w-10"/></span> </p>
 
         <div 
