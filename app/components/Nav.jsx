@@ -114,7 +114,7 @@ const Nav = ({ pageInfo }) => {
             className="nav-link2 flex flex-row gap-1 items-center group w-[150px] justify-start mx-3"
           >
             <BriefcaseIcon className="mobile-nav-icon group-hover:animate-bounce" />
-            Experiance
+            Experience
           </a>
           <a
             href="#Projects "
@@ -216,7 +216,7 @@ const Nav = ({ pageInfo }) => {
               onClick={handleClose}
             >
               <BriefcaseIcon className="mobile-nav-icon" />
-              Experiance
+              Experience
             </a>
             <a
               href="#Projects "

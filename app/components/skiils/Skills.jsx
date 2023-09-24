@@ -18,7 +18,7 @@ const Skills = ({skills}) => {
     }}
     viewport={{once:true}}
     transition={{duration:1,}}
-    className="flex relative flex-col xl:flex-row max-w-[2000px] xl:px-10 min-h-[500px] xl:justify-center justify-start xl:space-y-0 mx-0 items-center text-2xl mt-3 xl:mt-5 md:mt-5">
+    className="flex relative flex-col xl:flex-row max-w-[2000px] xl:px-10 min-h-[500px] xl:justify-center justigit fy-start xl:space-y-0 mx-0 items-center text-2xl mt-3 xl:mt-5 md:mt-5">
     
       <div className="grid xl:grid-cols-7 lg:grid-cols-6 md:grid-cols-5 grid-cols-5 gap-3">
         {skills.map((skill,index)=><Skill key={index} completed={skill.progress} techName={skill.title} imageUrl={skill.image} bgcolor={skill.bgcolor}/>)}
